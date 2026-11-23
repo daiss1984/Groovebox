@@ -1,0 +1,26 @@
+{
+  "name": "groovebox",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:e2e": "playwright test",
+    "prestart": "npm run build"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.12.1",
+    "lucide-static": "^1.77.0",
+    "music-metadata": "^12.7.0",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "esbuild": "^0.28.2"
+  },
+  "engines": {
+    "node": ">=22.9.0"
+  }
+}

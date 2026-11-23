@@ -1,0 +1,16 @@
+node_modules/
+.env
+public/metadata.bundle.js
+public/lyricsfile-yaml.bundle.js
+dist/
+test-results/
+playwright-report/
+.groovebox/
+.DS_Store
+
+public/icons.svg
+public/sw-build.js
+public/.sw-build-*.js
+
+.venv-smb/
+__pycache__/
